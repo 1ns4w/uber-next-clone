@@ -38,8 +38,10 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 2. open ur project with your favorite IDE
 3. install tailwind for next-js and tailwind styled components
 4. import tailwind to _app and tailwind styles components to wherever u wanna use it
-5. 
+5. install and import mapbox-gl to _app
+6. import mapbox-gl to wherever u wanna use it
 
 ## Dependencies
 - tailwind for next.js
 - tailwind styled components
+- mapbox gl js module
