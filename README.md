@@ -1,6 +1,6 @@
 ## Getting Started
 
-Follow the steps below to run the project locally.
+Follow the steps below to run the project in your computer.
 
 1. Install the latests LTS version for Node.js from https://nodejs.org/en/download/.
 2. Clone this repository.
