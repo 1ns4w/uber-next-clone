@@ -1,45 +1,48 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
 ## Getting Started
 
-First, run the development server:
+Follow the steps below to run the project locally.
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+1. Install the latests LTS version for Node.js from https://nodejs.org/en/download/.
+2. Clone this repository.
+3. Navigate to the project directory.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+	```powershell
+	cd uber-clone
+	``` 
+4. Install package.json (project) dependencies.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+	```powershell
+	npm install
+	```
+	
+5. Install Tailwind CSS for Next.js from https://tailwindcss.com/docs/guides/nextjs.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+	```powershell
+	npm install -D tailwindcss@latest postcss@latest autoprefixer@latest
+	```
+	
+6. Install Tailwind components for React.js from https://www.npmjs.com/package/tailwind-styled-components.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+	```powershell
+	npm i -D tailwind-styled-components
+	```
+	
+7. Install Mapbox GLS JS module from https://www.mapbox.com/install/js/bundler-install/.
 
-## Learn More
+	```powershell
+	npm install mapbox-gl --save
+	```
+	
+8. Install heroicons for React.js from https://heroicons.com/.
 
-To learn more about Next.js, take a look at the following resources:
+	```powershell
+	npm install @heroicons/react
+	```
+	
+9. Run the development server.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-
-## Project
-1. npx create-next-app@latest
-2. open ur project with your favorite IDE
-3. install tailwind for next-js and tailwind styled components
-4. import tailwind to _app and tailwind styles components to wherever u wanna use it
-5. 
-
-## Dependencies
-- tailwind for next.js
-- tailwind styled components
+	```powershell
+	npm run dev
+	```
+	
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the project.
