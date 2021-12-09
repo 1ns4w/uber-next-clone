@@ -36,7 +36,7 @@ const Search = () => {
                 Saved Places
             </SavedPlaces>
             
-            <Link href = "">
+            <Link href = "/confirm">
                 <ConfirmButton>
                     Confirm Locations
                 </ConfirmButton>
