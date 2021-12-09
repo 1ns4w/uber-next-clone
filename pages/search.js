@@ -22,20 +22,25 @@ const Search = () => {
                     <Square src="https://img.icons8.com/windows/50/000000/square-full.png"/>
                 </FromToIcons>
                 
-                {/*Saved Paces*/}
                 <InputBoxes>
                     <Input placeholder = "Enter pickup location"/>
                     <Input placeholder = "Where to?"/>
                 </InputBoxes>
 
-                {/*Confirm Location*/}
                 <PlusIcon src = "https://img.icons8.com/ios/50/000000/plus-math.png" />
 
             </InputContainer>
 
-
+            <SavedPlaces>
+                <StarIcon src = "https://img.icons8.com/ios-filled/50/ffffff/star--v1.png" />
+                Saved Places
+            </SavedPlaces>
             
+            <Link src = "">
+                <ConfirmButton>
 
+                </ConfirmButton>
+            </Link>
 
         </Wrapper>
     )
@@ -48,7 +53,7 @@ const Wrapper = tw.div`
 ` // styled component
 
 const ButtonContainer = tw.div `
-    bg-white pl-2
+    bg-white pl-4 py-2
 `
 
 const BackButton = tw.img`
@@ -56,21 +61,27 @@ const BackButton = tw.img`
 `
 
 const InputContainer = tw.div`
-    bg-white flex items-center
+    bg-white flex items-center px-4 pb-6
 `
 
 const FromToIcons = tw.div`
-    w-10 flex flex-col
+    w-10 flex flex-col items-center
 `
 
-const Circle = tw.img``
+const Circle = tw.img`
+    h-2.5
+`
 
-const Square = tw.img``
+const Square = tw.img`
+    h-2.5
+`
 
-const Line = tw.img``
+const Line = tw.img`
+    h-10
+`
 
 const InputBoxes = tw.div`
-    flex flex-col flex-1
+    flex flex-col flex-1 mx-4
 `
 
 const Input = tw.input`
@@ -79,4 +90,12 @@ const Input = tw.input`
 
 const PlusIcon = tw.img`
     w-10 h-10 rounded-full bg-gray-200
+`
+
+const SavedPlaces = tw.div`
+    flex bg-white px-4 py-2 mt-2 rounded-sm items-center
+`
+
+const StarIcon = tw.img`
+    bg-gray-400 w-10 h-10 p-2 rounded-full mr-4
 `

@@ -55,3 +55,5 @@ React components are reusable user interface elements whereas flexbox is a CSS 3
 ```
 
 items-center centers an element horizontally whereas justify-center centers an element vertically.
+
+padding makes everything bigger, its expanding whereas margin is contracting
