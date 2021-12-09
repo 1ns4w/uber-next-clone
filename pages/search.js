@@ -36,9 +36,9 @@ const Search = () => {
                 Saved Places
             </SavedPlaces>
             
-            <Link src = "">
+            <Link href = "">
                 <ConfirmButton>
-
+                    Confirm Locations
                 </ConfirmButton>
             </Link>
 
@@ -98,4 +98,8 @@ const SavedPlaces = tw.div`
 
 const StarIcon = tw.img`
     bg-gray-400 w-10 h-10 p-2 rounded-full mr-4
+`
+
+const ConfirmButton = tw.div`
+    bg-black text-white py-2 m-4 p-4 text-center 
 `
