@@ -52,4 +52,4 @@ React is a free and open-source front-end JavaScript library for building user i
 React components are reusable user interface elements whereas flexbox is a CSS 3 web layout model. The flex layout allows responsive elements within a container to be automatically arranged depending upon screen size.
 ```
 
-items-center centers an element vertically whereas justify-center centers an element horizontally.
+items-center centers an element horizontally whereas justify-center centers an element vertically.
