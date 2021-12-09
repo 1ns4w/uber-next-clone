@@ -1,7 +1,6 @@
 import { useEffect } from 'react'
 import Head from 'next/head'
 import Image from 'next/image'
-import styles from '../styles/Home.module.css'
 import tw from 'tailwind-styled-components'
 import Map from './components/Map'
 
@@ -35,17 +34,17 @@ const Header = tw.div`
 `
 
 const UberLogo = tw.img`
-  h-18
+  h-28
 `
 
 const Profile = tw.div`
-  flex items-center
+  flex items-center mr-4
 `
 
 const Name = tw.div`
-  mr-4 w-20
+  mr-4 w-20 text-sm
 `
 
 const UserImage = tw.img`
-  h-12 w-12 rounded-full
+  h-16 w-16 rounded-full
 `
