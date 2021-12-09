@@ -3,38 +3,49 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import tw from 'tailwind-styled-components'
-import mapboxgl from '!mapbox-gl'
-
-mapboxgl.accessToken = 'pk.eyJ1IjoiaW5zNHciLCJhIjoiY2t2bndqc2d4M2V0MzJ3bWx4d2RlYWxjdyJ9.LPOMWdxnM8NBhEVKV8Hayg';
-
+import Map from './components/Map'
 
 export default function Home() {
-
-  useEffect( () => { // only loads once
-      const map = new mapboxgl.Map({
-        container: "map",
-        style: 'mapbox://styles/drakosi/ckvcwq3rwdw4314o3i2ho8tph',
-        center: [-99.29811, 39.39172],
-        zoom: 3,
-    });
-  });
-
   return (
     <Wrapper>
-      <Map id="map">Map</Map>
-      <ActionItems>Start</ActionItems>
+      <Map /> 
+      <ActionItems>
+        <Header>
+          <UberLogo src="https://i.ibb.co/84stgjq/uber-technologies-new-20218114.jpg" />
+          <Profile>
+            <Name>Angel Mejia</Name>
+            <UserImage src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIEgbg8d75Jf5Vfs_tTkWkZHSmFNDZCTlLg-lR12cjGp2-PO0YWM4VfFR99apfQ1DXr8Q&usqp=CAU" />
+          </Profile>
+        </Header>
+      </ActionItems>
     </Wrapper>
   )
 }
 
 const Wrapper = tw.div`
-  h-screen bg-blue-300 flex flex-col
-`
-
-const Map = tw.div`
-  flex-1
+  flex flex-col h-screen
 `
 
 const ActionItems = tw.div`
-  bg-green-300 flex-1
+  flex-1
+`
+
+const Header = tw.div`
+  flex justify-between items-center
+`
+
+const UberLogo = tw.img`
+  h-18
+`
+
+const Profile = tw.div`
+  flex items-center
+`
+
+const Name = tw.div`
+  mr-4 w-20
+`
+
+const UserImage = tw.img`
+  h-12 w-12 rounded-full
 `
